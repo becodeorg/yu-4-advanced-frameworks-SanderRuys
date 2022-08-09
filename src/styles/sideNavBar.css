@@ -37,4 +37,39 @@
 }
 .sideNavBarContainer .navUpper .navHeading .hamburgerMenu span {
   display: block;
+  margin-top: 5px;
+  background-color: rgb(234, 241, 242);
+  border-radius: 15px;
+  height: 4px;
+  width: 30px;
+  transition: 0.4s;
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenu:hover span {
+  margin: auto;
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(1) {
+  width: 25px;
+  transform: translate(-3px, 8px) rotate(30deg);
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(1) {
+  display: none;
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(3) {
+  width: 25px;
+  transform: translate(-3px, -8px) rotate(-30deg);
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(1) {
+  width: 25px;
+  transform: translate(0px, 8px) rotate(-30deg);
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(1) {
+  display: none;
+}
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(3) {
+  width: 25px;
+  transform: translate(0px, -8px) rotate(30deg);
+}
+
+.sideNavBarContainerNotExpanded {
+  width: 85px;
 }/*# sourceMappingURL=SideNavBar.css.map */

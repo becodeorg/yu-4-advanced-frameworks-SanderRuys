@@ -9,6 +9,8 @@
 
     transition: 0.4s;
 
+    
+
     .navUpper{
         display: grid;
         .navHeading{
@@ -43,9 +45,60 @@
 
                 span{
                     display:block;
+                    margin-top: 5px;
+                    background-color: $white;
+                    border-radius: 15px;
+                    height: 4px;
+                    width: 30px;
+
+                    transition: 0.4s;
                 }
             }
+            .hamburgerMenu:hover{
+                span{
+                    margin:auto;
+                }
+            }
+            .hamburgerMenuIn:hover{
+                span:nth-child(1){
+                   width: 25px;
+                   transform: translate(-3px, 8px) rotate(30deg);
+                }
+            }
+             .hamburgerMenuIn:hover{
+                span:nth-child(1){
+                   display: none;
+                }
+            }
+            .hamburgerMenuIn:hover{
+                span:nth-child(3){
+                   width: 25px;
+                   transform: translate(-3px, -8px) rotate(-30deg);
+                }
+            }
+
+            .hamburgerMenuOut:hover{
+                span:nth-child(1){
+                   width: 25px;
+                   transform: translate(0px, 8px) rotate(-30deg);
+                }
+            }
+             .hamburgerMenuOut:hover{
+                span:nth-child(1){
+                   display: none;
+                }
+            }
+            .hamburgerMenuOut:hover{
+                span:nth-child(3){
+                   width: 25px;
+                   transform: translate(0px, -8px) rotate(30deg);
+                }
+            }
+
         }
 
     }
+}
+.sideNavBarContainerNotExpanded{
+        width:85px;
 }
