@@ -1,0 +1,51 @@
+@import 'variables.scss';
+
+.sideNavBarContainer{
+    background-color: $darkBlue;
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    color: $white;
+
+    transition: 0.4s;
+
+    .navUpper{
+        display: grid;
+        .navHeading{
+            grid-template-columns: 2fr, 1fr;
+            grid-template-rows: 1fr;
+            height: 75px;
+
+            .navBrand{
+                display: flex;
+
+                img{
+                    width: 40px;
+                    padding: 0 10px;
+                }
+            }
+
+            .hamburgerMenu{
+                position:absolute;
+                right: 0;
+
+                background: none;
+                border:none;
+                cursor: pointer;
+
+                margin: auto -35px;
+                background-color: $black;
+                border: 2px solid $white;
+                padding: 20px;
+                border-radius: 90px;
+                height: 71px;
+                width: 74px;
+
+                span{
+                    display:block;
+                }
+            }
+        }
+
+    }
+}
