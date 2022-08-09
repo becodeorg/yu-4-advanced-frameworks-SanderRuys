@@ -6,22 +6,42 @@
   color: rgb(234, 241, 242);
   transition: 0.4s;
 }
-.sideNavBarContainer .navUpper {
+.sideNavBarContainer .navUpper,
+.sideNavBarContainer .navHeading,
+.sideNavBarContainer .navMenu,
+.sideNavBarContainer .menuItem,
+.sideNavBarContainer .navFooter {
   display: grid;
 }
-.sideNavBarContainer .navUpper .navHeading {
+.sideNavBarContainer .navUpper .navHeading,
+.sideNavBarContainer .navHeading .navHeading,
+.sideNavBarContainer .navMenu .navHeading,
+.sideNavBarContainer .menuItem .navHeading,
+.sideNavBarContainer .navFooter .navHeading {
   grid-template-columns: 2fr, 1fr;
   grid-template-rows: 1fr;
   height: 75px;
 }
-.sideNavBarContainer .navUpper .navHeading .navBrand {
+.sideNavBarContainer .navUpper .navHeading .navBrand,
+.sideNavBarContainer .navHeading .navHeading .navBrand,
+.sideNavBarContainer .navMenu .navHeading .navBrand,
+.sideNavBarContainer .menuItem .navHeading .navBrand,
+.sideNavBarContainer .navFooter .navHeading .navBrand {
   display: flex;
 }
-.sideNavBarContainer .navUpper .navHeading .navBrand img {
+.sideNavBarContainer .navUpper .navHeading .navBrand img,
+.sideNavBarContainer .navHeading .navHeading .navBrand img,
+.sideNavBarContainer .navMenu .navHeading .navBrand img,
+.sideNavBarContainer .menuItem .navHeading .navBrand img,
+.sideNavBarContainer .navFooter .navHeading .navBrand img {
   width: 40px;
   padding: 0 10px;
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenu {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenu,
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenu,
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenu,
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenu,
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenu {
   position: absolute;
   right: 0;
   background: none;
@@ -35,7 +55,11 @@
   height: 71px;
   width: 74px;
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenu span {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenu span,
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenu span,
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenu span,
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenu span,
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenu span {
   display: block;
   margin-top: 5px;
   background-color: rgb(234, 241, 242);
@@ -44,30 +68,154 @@
   width: 30px;
   transition: 0.4s;
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenu:hover span {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenu:hover span,
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenu:hover span,
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenu:hover span,
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenu:hover span,
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenu:hover span {
   margin: auto;
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(1) {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(1),
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenuIn:hover span:nth-child(1),
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenuIn:hover span:nth-child(1),
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenuIn:hover span:nth-child(1),
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenuIn:hover span:nth-child(1) {
   width: 25px;
   transform: translate(-3px, 8px) rotate(30deg);
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(1) {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(2),
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenuIn:hover span:nth-child(2),
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenuIn:hover span:nth-child(2),
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenuIn:hover span:nth-child(2),
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenuIn:hover span:nth-child(2) {
   display: none;
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(3) {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuIn:hover span:nth-child(3),
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenuIn:hover span:nth-child(3),
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenuIn:hover span:nth-child(3),
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenuIn:hover span:nth-child(3),
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenuIn:hover span:nth-child(3) {
   width: 25px;
   transform: translate(-3px, -8px) rotate(-30deg);
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(1) {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(1),
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenuOut:hover span:nth-child(1),
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenuOut:hover span:nth-child(1),
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenuOut:hover span:nth-child(1),
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenuOut:hover span:nth-child(1) {
   width: 25px;
   transform: translate(0px, 8px) rotate(-30deg);
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(1) {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(2),
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenuOut:hover span:nth-child(2),
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenuOut:hover span:nth-child(2),
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenuOut:hover span:nth-child(2),
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenuOut:hover span:nth-child(2) {
   display: none;
 }
-.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(3) {
+.sideNavBarContainer .navUpper .navHeading .hamburgerMenuOut:hover span:nth-child(3),
+.sideNavBarContainer .navHeading .navHeading .hamburgerMenuOut:hover span:nth-child(3),
+.sideNavBarContainer .navMenu .navHeading .hamburgerMenuOut:hover span:nth-child(3),
+.sideNavBarContainer .menuItem .navHeading .hamburgerMenuOut:hover span:nth-child(3),
+.sideNavBarContainer .navFooter .navHeading .hamburgerMenuOut:hover span:nth-child(3) {
   width: 25px;
   transform: translate(0px, -8px) rotate(30deg);
+}
+.sideNavBarContainer .navUpper .navMenu,
+.sideNavBarContainer .navHeading .navMenu,
+.sideNavBarContainer .navMenu .navMenu,
+.sideNavBarContainer .menuItem .navMenu,
+.sideNavBarContainer .navFooter .navMenu {
+  grid-template-rows: repeat(7, 1fr);
+  margin-top: 50px;
+}
+.sideNavBarContainer .navUpper .navMenu .menuItem,
+.sideNavBarContainer .navHeading .navMenu .menuItem,
+.sideNavBarContainer .navMenu .navMenu .menuItem,
+.sideNavBarContainer .menuItem .navMenu .menuItem,
+.sideNavBarContainer .navFooter .navMenu .menuItem {
+  height: 57px;
+  width: 16em;
+  display: flex;
+  color: rgb(234, 241, 242);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: auto 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.sideNavBarContainer .navUpper .navMenu .menuItem img,
+.sideNavBarContainer .navHeading .navMenu .menuItem img,
+.sideNavBarContainer .navMenu .navMenu .menuItem img,
+.sideNavBarContainer .menuItem .navMenu .menuItem img,
+.sideNavBarContainer .navFooter .navMenu .menuItem img {
+  width: 30px;
+  padding: 0 20px;
+}
+.sideNavBarContainer .navUpper .navMenu .menuItem:hover,
+.sideNavBarContainer .navHeading .navMenu .menuItem:hover,
+.sideNavBarContainer .navMenu .navMenu .menuItem:hover,
+.sideNavBarContainer .menuItem .navMenu .menuItem:hover,
+.sideNavBarContainer .navFooter .navMenu .menuItem:hover {
+  background-color: rgb(17, 17, 17);
+}
+.sideNavBarContainer .navUpper .navMenu .menuItemNotExpended,
+.sideNavBarContainer .navHeading .navMenu .menuItemNotExpended,
+.sideNavBarContainer .navMenu .navMenu .menuItemNotExpended,
+.sideNavBarContainer .menuItem .navMenu .menuItemNotExpended,
+.sideNavBarContainer .navFooter .navMenu .menuItemNotExpended {
+  margin: auto;
+  width: 4.5em;
+}
+.sideNavBarContainer .navUpper .navMenu .menuItem:hover > .toolTip,
+.sideNavBarContainer .navHeading .navMenu .menuItem:hover > .toolTip,
+.sideNavBarContainer .navMenu .navMenu .menuItem:hover > .toolTip,
+.sideNavBarContainer .menuItem .navMenu .menuItem:hover > .toolTip,
+.sideNavBarContainer .navFooter .navMenu .menuItem:hover > .toolTip {
+  display: block;
+}
+.sideNavBarContainer .navUpper .navMenu .toolTip,
+.sideNavBarContainer .navHeading .navMenu .toolTip,
+.sideNavBarContainer .navMenu .navMenu .toolTip,
+.sideNavBarContainer .menuItem .navMenu .toolTip,
+.sideNavBarContainer .navFooter .navMenu .toolTip {
+  display: none;
+  position: absolute;
+  left: 99%;
+  bottom: 80%;
+  width: auto;
+  padding: 4px 8px;
+  border-radius: 15px 15px 15px 0;
+  white-space: nowrap;
+  border: 2px solid rgb(234, 241, 242);
+  background-color: rgb(17, 17, 17);
+}
+.sideNavBarContainer .navFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+}
+.sideNavBarContainer .navFooter .navDetails {
+  display: flex;
+}
+.sideNavBarContainer .navFooter .navDetails img {
+  width: 50%;
+  padding: 0 20px;
+}
+.sideNavBarContainer .navFooter .navDetails .navFooterInfo .navFooterUserName {
+  font-size: 18px;
+  font-weight: 900;
+}
+.sideNavBarContainer .navFooter .logoutIcon {
+  width: 30px;
+  margin: auto;
+  border-radius: 90px;
+  padding: 20px;
+  margin-left: 5px;
+}
+.sideNavBarContainer .navFooter .logoutIcon:hover {
+  background-color: rgb(234, 241, 242);
 }
 
 .sideNavBarContainerNotExpanded {
