@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+.pageAndNavbar {
+    display: flex;
+    flex-direction: row;
+    height: $pageHeight;
+    
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+}

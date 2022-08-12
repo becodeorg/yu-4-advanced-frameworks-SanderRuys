@@ -1,10 +1,10 @@
-import { SideNavBar } from './_partials';
+import { Home } from './pages';
 
 
 function App() {
   return (
     <div className="App">
-     <SideNavBar />
+     <Home />
     </div>
   );
 }

@@ -1,6 +1,22 @@
+//imports
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+//Fonts
+$mainFont: "Bebas Neue", cursive;
 
 //Colors
 $black: rgb(17, 17, 17);
-$darkBlue: rgb(0,0,62);
+$navBarBackground: rgb(5, 5, 44);
 
 $white: rgb(234, 241, 242);
+
+//variables
+$widthNavBarExpanded: 16vw;
+$widthNavBarCollapsed: 5vw;
+
+$heroWidth: 100%;
+$heroHeight: 50vh;
+
+$pageHeight: 100vh;
+
+$iconSize: 2rem;

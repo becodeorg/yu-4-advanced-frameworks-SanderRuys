@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  width: 100%;
+}
+* .heroImage {
+  height: 50vh;
+  background-color: chartreuse;
+}
+* .heroImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=hero.css.map */

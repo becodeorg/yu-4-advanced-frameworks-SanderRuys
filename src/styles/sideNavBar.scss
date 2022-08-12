@@ -1,45 +1,47 @@
-@import 'variables.scss';
+@import "variables.scss";
 
-.sideNavBarContainer{
-    background-color: $darkBlue;
-    width: 300px;
-    height: 100vh;
+.sideNavBarContainer {
+    background-color: $navBarBackground;
+    width: $widthNavBarExpanded;
+    height: $pageHeight;
     position: relative;
     color: $white;
 
     transition: 0.4s;
 
-    
-
     .navUpper,
     .navHeading,
     .navMenu,
     .menuItem,
-    .navFooter{
+    .navFooter {
         display: grid;
         .navHeading {
-            grid-template-columns: 2fr, 1fr;
-            grid-template-rows: 1fr;
-            height: 75px;
+            //grid-template-columns: 2fr, 1fr;
+            //grid-template-rows: 1fr;
+            height: 13vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
 
-            .navBrand{
-                display: flex;
-
-                img{
-                    width: 40px;
-                    padding: 0 10px;
-                }
+            .brandLogo {
+                color: $white;
+                font-size: 2.5vw;
+            }
+            .navBrand {
+                font-family: $mainFont;
+                margin-right: 1vw;
             }
 
-            .hamburgerMenu{
-                position:absolute;
+            .hamburgerMenu {
+                position: absolute;
                 right: 0;
 
                 background: none;
-                border:none;
+                border: none;
                 cursor: pointer;
 
                 margin: auto -35px;
+                margin-top: 18vh;
                 background-color: $black;
                 border: 2px solid $white;
                 padding: 20px;
@@ -47,8 +49,8 @@
                 height: 71px;
                 width: 74px;
 
-                span{
-                    display:block;
+                span {
+                    display: block;
                     margin-top: 5px;
                     background-color: $white;
                     border-radius: 15px;
@@ -58,82 +60,84 @@
                     transition: 0.4s;
                 }
             }
-            .hamburgerMenu:hover{
-                span{
-                    margin:auto;
+            .hamburgerMenu:hover {
+                span {
+                    margin: auto;
                 }
             }
-            .hamburgerMenuIn:hover{
-                span:nth-child(1){
-                   width: 25px;
-                   transform: translate(-3px, 8px) rotate(30deg);
+            .hamburgerMenuIn:hover {
+                span:nth-child(1) {
+                    width: 25px;
+                    transform: translate(-3px, 8px) rotate(30deg);
                 }
             }
-             .hamburgerMenuIn:hover{
-                span:nth-child(2){
-                   display: none;
+            .hamburgerMenuIn:hover {
+                span:nth-child(2) {
+                    display: none;
                 }
             }
-            .hamburgerMenuIn:hover{
-                span:nth-child(3){
-                   width: 25px;
-                   transform: translate(-3px, -8px) rotate(-30deg);
-                }
-            }
-
-            .hamburgerMenuOut:hover{
-                span:nth-child(1){
-                   width: 25px;
-                   transform: translate(0px, 8px) rotate(-30deg);
-                }
-            }
-             .hamburgerMenuOut:hover{
-                span:nth-child(2){
-                   display: none;
-                }
-            }
-            .hamburgerMenuOut:hover{
-                span:nth-child(3){
-                   width: 25px;
-                   transform: translate(0px, -8px) rotate(30deg);
+            .hamburgerMenuIn:hover {
+                span:nth-child(3) {
+                    width: 25px;
+                    transform: translate(-3px, -8px) rotate(-30deg);
                 }
             }
 
+            .hamburgerMenuOut:hover {
+                span:nth-child(1) {
+                    width: 25px;
+                    transform: translate(0px, 8px) rotate(-30deg);
+                }
+            }
+            .hamburgerMenuOut:hover {
+                span:nth-child(2) {
+                    display: none;
+                }
+            }
+            .hamburgerMenuOut:hover {
+                span:nth-child(3) {
+                    width: 25px;
+                    transform: translate(0px, -8px) rotate(30deg);
+                }
+            }
         }
-        .navMenu{
+        .navMenu {
             grid-template-rows: repeat(7, 1fr);
-            margin-top: 50px;
+            margin-top: 10vh;
 
-            .menuItem{
-                height: 57px;
-                width: 16em;
+            .menuItem {
+                height: 8vh;
+                width: auto;
                 display: flex;
                 color: $white;
                 text-decoration: none;
                 text-transform: uppercase;
-                margin: auto 20px;
+                margin: auto 1vw;
                 border-radius: 10px;
                 position: relative;
+                align-items: center;
+                gap: 1vw;
+                font-size: 1.1rem;
+                font-family: $mainFont;
 
-                img {
-                    width: 30px;
-                    padding: 0 20px;
+                .menuIcon {
+                    font-size: $iconSize;
                 }
             }
             .menuItem:hover {
                 background-color: $black;
             }
-            .menuItemNotExpended{
-                margin:auto;
+            .menuItemNotExpended {
+                margin: auto;
                 width: 4.5em;
             }
 
             //selects all .toolTip elements where the parent is a .menuItem:hover element
-            .menuItem:hover > .toolTip{
+            .menuItem:hover > .toolTip {
                 display: block;
             }
 
-            .toolTip{
+            .toolTip {
                 display: none;
                 position: absolute;
                 left: 99%;
@@ -148,38 +152,48 @@
             }
         }
     }
-    .navFooter{
+    .navFooter {
         position: absolute;
-        bottom: 0;
+        bottom: 0vh;
         width: 100%;
         grid-template-columns: 2fr 1fr;
-        //background-color: $black;
+        align-items: center;
+        //display: flex;
+        //flex-direction: row;
 
-        .navDetails{
+        .navDetails {
             display: flex;
-            img{
-                width: 50%;
-                padding: 0 20px;
+            flex-direction: row;
+            align-items: center;
+            img {
+                width: 40%;
+                border-radius: 50%;
+                margin: 1vw 1vw 1vw;
             }
-            .navFooterInfo{
-                .navFooterUserName{
-                    font-size: 18px;
-                    font-weight: 900;
+            .navFooterInfo {
+                .navFooterUserName {
+                    font-size: 1.1rem;
+                    //font-weight: 900;
+                    //background-color: blueviolet;
                 }
             }
         }
-        .logoutIcon{
-            width: 30px;
+        .logoutIcon {
+            //width: auto;
+            //height: auto;
+            //aspect-ratio: 1 / 1;
             margin: auto;
-            border-radius: 90px;
-            padding: 20px;
-            margin-left: 5px;
+            //border-radius: 50%;
+            //margin-right: 1.2vw;
+            font-size: $iconSize;
+
+            //background-color:burlywood;
         }
-        .logoutIcon:hover{
+        .logoutIcon:hover {
             background-color: $white;
         }
     }
 }
-.sideNavBarContainerNotExpanded{
-        width:85px;
+.sideNavBarContainerNotExpanded {
+    width: $widthNavBarCollapsed;
 }
