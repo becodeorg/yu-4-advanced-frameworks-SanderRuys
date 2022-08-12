@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+.thumbnail {
+    width: $thumbnailWidth;
+    //height: $thumbnailHeight;
+    aspect-ratio: 16 / 9;
+    background-color: aliceblue;
+    margin-right: 0.5rem;
+}

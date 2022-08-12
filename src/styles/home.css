@@ -3,8 +3,10 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
+  background-color: rgb(39, 39, 41);
 }
 .pageAndNavbar .page {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }/*# sourceMappingURL=home.css.map */

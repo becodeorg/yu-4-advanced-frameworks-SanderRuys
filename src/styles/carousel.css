@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.carousel {
+  width: 100%;
+  margin-top: 0.6rem;
+}
+.carousel .carouselTitle {
+  color: rgb(234, 241, 242);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: 3.125rem;
+}
+.carousel .wrapper {
+  position: relative;
+}
+.carousel .wrapper .sliderArrow {
+  width: 3.125rem;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 0.5);
+  color: rgb(234, 241, 242);
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+.carousel .wrapper .sliderArrow.left {
+  left: 0;
+}
+.carousel .wrapper .sliderArrow.right {
+  right: 0;
+}
+.carousel .wrapper .movieContainer {
+  margin-left: 3.125rem;
+  display: flex;
+  flex-direction: row;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}/*# sourceMappingURL=carousel.css.map */

@@ -4,9 +4,11 @@
     display: flex;
     flex-direction: row;
     height: $pageHeight;
+    background-color: rgb(39, 39, 41);
     
     .page{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
     }
 }
