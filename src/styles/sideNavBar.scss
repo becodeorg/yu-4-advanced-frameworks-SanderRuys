@@ -125,7 +125,7 @@
                 }
             }
             .menuItem:hover {
-                background-color: $black;
+                background-color: $highlightColor;
             }
             .menuItemNotExpended {
                 margin: auto;
@@ -190,8 +190,9 @@
             //background-color:burlywood;
         }
         .logoutIcon:hover {
-            background-color: $white;
+            background-color: $highlightColor;
         }
+        
     }
 }
 .sideNavBarContainerNotExpanded {

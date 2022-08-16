@@ -66,7 +66,7 @@ const SideNavBar = () => {
                     <div className="navDetails">
                         <img src={avatar} alt="avatar icon" />
                         <div className="navFooterInfo">
-                            <p className="navFooterUserName">Nick Drake</p>
+                            <p className="navFooterUserName">Dr. Heinz</p>
                         </div>
                     </div>
                 )}

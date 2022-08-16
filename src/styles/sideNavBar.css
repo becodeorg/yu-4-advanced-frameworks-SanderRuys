@@ -164,7 +164,7 @@
 .sideNavBarContainer .navMenu .navMenu .menuItem:hover,
 .sideNavBarContainer .menuItem .navMenu .menuItem:hover,
 .sideNavBarContainer .navFooter .navMenu .menuItem:hover {
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(27, 27, 179);
 }
 .sideNavBarContainer .navUpper .navMenu .menuItemNotExpended,
 .sideNavBarContainer .navHeading .navMenu .menuItemNotExpended,
@@ -222,7 +222,7 @@
   font-size: 2rem;
 }
 .sideNavBarContainer .navFooter .logoutIcon:hover {
-  background-color: rgb(234, 241, 242);
+  background-color: rgb(27, 27, 179);
 }
 
 .sideNavBarContainerNotExpanded {
